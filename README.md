@@ -1,5 +1,7 @@
 # nullable
 
+[![Build Status](https://travis-ci.org/martinusso/nullable.svg?branch=master)](https://travis-ci.org/martinusso/nullable)
+[![Coverage Status](https://coveralls.io/repos/github/martinusso/nullable/badge.svg?branch=master)](https://coveralls.io/github/martinusso/nullable?branch=master)
 [![GoDoc](https://godoc.org/github.com/martinusso/nullable?status.svg)](https://godoc.org/github.com/martinusso/nullable)
 [![Go Report Card](https://goreportcard.com/badge/github.com/martinusso/nullable)](https://goreportcard.com/report/github.com/martinusso/nullable)
 
