@@ -39,11 +39,7 @@ type Float64 struct {
 
 // MarshalJSON implements the json.Marshaler interface.
 func (f Float64) MarshalJSON() ([]byte, error) {
-	if f.Valid {
-		return json.Marshal(f.Float64)
-	} else {
-		return json.Marshal(nil)
-	}
+	return marshalJSON(f.Valid, f.Float64)
 }
 
 // UnmarshalJSON implements the json.Unmarshaler interface

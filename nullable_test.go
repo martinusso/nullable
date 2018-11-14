@@ -3,8 +3,6 @@ package nullable
 import (
 	"encoding/json"
 	"testing"
-
-	"github.com/davecgh/go-spew/spew"
 )
 
 const (
@@ -72,20 +70,4 @@ func TestUnmarshall(t *testing.T) {
 	if got := person.Weight.Float64; got != 0 {
 		t.Errorf("Expected no children got '%f'", got)
 	}
-}
-
-type Persom struct {
-	Name    String
-	Age     Int64
-	Married Bool
-	Height  Float64
-}
-
-func TestUnmarshalla(t *testing.T) {
-	var person Persom
-
-	body := []byte(`{"Name":"John Doe","Age":42,"Married":true,"Height":1.79}`)
-	json.Unmarshal(body, &person)
-	spew.Dump(person)
-	// fmt.Println(person)
 }
