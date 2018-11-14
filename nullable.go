@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 )
 
-// NullBool represents a bool that may be null.
+// Bool represents a bool that may be null.
 // Similar to sql.NullBool, but implement json.Marshaler/json.Unmarshaler
 type Bool struct {
 	sql.NullBool
@@ -31,7 +31,7 @@ func (b *Bool) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
-// NullFloat64 represents a float64 that may be null.
+// Float64 represents a float64 that may be null.
 // Similar to sql.NullFloat64, but implement json.Marshaler/json.Unmarshaler
 type Float64 struct {
 	sql.NullFloat64
@@ -61,7 +61,7 @@ func (f *Float64) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
-// NullInt64 represents an int64 that may be null.
+// Int64 represents an int64 that may be null.
 // Similar to sql.NullInt64, but implement json.Marshaler/json.Unmarshaler
 type Int64 struct {
 	sql.NullInt64
@@ -87,7 +87,7 @@ func (v *Int64) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
-// NullString represents a string that may be null.
+// String represents a string that may be null.
 // Similar to sql.NullString, but implement json.Marshaler/json.Unmarshaler
 type String struct {
 	sql.NullString
